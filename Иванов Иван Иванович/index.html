@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Доставка воды - Чистая Вода</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="left_column">
+		<div class="logo">
+			<a href="/"><img src="./src/Mask%20Group.svg" alt=""></a>
+			<h3 class="name">Чистая Вода</h3>
+		</div>
+		<div class="description">
+			<p>Питьевая вода, предназначенная для ежедневного потребления, идеально подходит для кулеров. Закажите доставку воды и мы привезем её на дом или в офис.</p>
+		</div>
+	</div>
+	<div class="right_column">
+		<div class="order">
+		<h3 class="name">Заполните данные</h3>
+		
+		<form action="./lib/server.js">
+		<input type="text" value="ФИО" name="order_name" class="order_name">
+		<input type="text" value="E-mail" name="mail" class="mail"><br><br>
+		<input type="text" value="Номер телефона" name="phone" class="phone">
+		<input type="text" value="Адрес" name="adress" class="adress"><br>
+		<input type="checkbox"> Я согласен на <a href="#">обработку персональных данных</a>
+		</form>
+		</div>
+	</div>
+</div>
+</html>
