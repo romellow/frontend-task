@@ -57,6 +57,22 @@ a, a:hover{
 	margin-left: 40px;
 	margin-top: 40px;
 }
-.order_name, phone{
-	float: left;
+.mail, .adress{
+	float: right;
+	margin-right: 40px;
+}
+.order_name, .mail, .phone, .adress{
+	background-color: #F5F8FF;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;
+	border-bottom-width: 1px;
+	border-bottom-color: #D5DDE0;
+	width: 328px;
+	font-family: Tahoma;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	color: #455273;
 }
