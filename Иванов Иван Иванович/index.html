@@ -11,7 +11,7 @@
 	<div class="left_column">
 		<div class="logo">
 			<a href="/"><img src="./src/Mask%20Group.svg" alt=""></a>
-			<h3 class="name">Чистая Вода</h3>
+			<h1>Чистая Вода</h1>
 		</div>
 		<div class="description">
 			<p>Питьевая вода, предназначенная для ежедневного потребления, идеально подходит для кулеров. Закажите доставку воды и мы привезем её на дом или в офис.</p>
@@ -19,14 +19,25 @@
 	</div>
 	<div class="right_column">
 		<div class="order">
-		<h3 class="name">Заполните данные</h3>
+		<h1>Заполните данные</h1>
 		
 		<form action="./lib/server.js">
 		<input type="text" placeholder="ФИО" name="order_name" class="order_name">
 		<input type="text" placeholder="E-mail" name="mail" class="mail"><br><br>
-		<input type="text" pattern="+[0-9]{1}([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер телефона" name="phone" class="phone">
+		<input type="text" pattern="[0-9]{11}" placeholder="Номер телефона" name="phone" class="phone">
 		<input type="text" placeholder="Адрес" name="adress" class="adress"><br>
-		<input type="checkbox"> Я согласен на <a href="#">обработку персональных данных</a>
+		<label><input type="checkbox"> Я согласен на </label><a href="#">обработку персональных данных</a><br>
+		<div class="choose_water">
+			<h2>Вода</h2>
+			<div class="checkboxes">
+			<label><input style="display: none;" type="checkbox" checked><span><div class="grlight"></div></span></label>
+			<label><input style="display: none;" type="checkbox"><span><div class="grlight"></div></span></label>
+			<label><input style="display: none;" type="checkbox"><span><div class="grlight"></div></span></label>
+			</div>
+		</div>
+		<div class="choose_time">
+			<h2>Дата и время доставки</h2>
+		</div>
 		</form>
 		</div>
 	</div>
