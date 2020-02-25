@@ -26,17 +26,20 @@
 		<input type="text" placeholder="E-mail" name="mail" class="mail"><br><br>
 		<input type="text" pattern="[0-9]{11}" placeholder="Номер телефона" name="phone" class="phone">
 		<input type="text" placeholder="Адрес" name="adress" class="adress"><br>
-		<label><input type="checkbox"> Я согласен на </label><a href="#">обработку персональных данных</a><br>
+		<div class="agree">
+		<label><input type="checkbox"> Я согласен на </label><a href="#"> обработку персональных данных</a>
+		</div>
 		<div class="choose_water">
 			<h2>Вода</h2>
 			<div class="checkboxes">
-			<label><input style="display: none;" type="checkbox" checked><span><div class="grlight"></div></span></label>
-			<label><input style="display: none;" type="checkbox"><span><div class="grlight"></div></span></label>
-			<label><input style="display: none;" type="checkbox"><span><div class="grlight"></div></span></label>
+			<label><input style="display: none;" type="checkbox" checked><span><div class="grlight"></div><div class="liters">5 л</div><div class="sht">1 шт</div><div class="cost">220 ₽</div></span></label>
+			<label><input style="display: none;" type="checkbox"><span><div class="grlight"></div><div class="liters">5,5 л</div><div class="sht">2 шт</div><div class="cost">320 ₽</div></span></label>
+			<label><input style="display: none;" type="checkbox"><span><div class="grlight"></div><div class="liters">15 л</div><div class="sht">3 шт</div><div class="cost">440 ₽</div></span></label>
 			</div>
 		</div>
 		<div class="choose_time">
 			<h2>Дата и время доставки</h2>
+			День
 		</div>
 		</form>
 		</div>

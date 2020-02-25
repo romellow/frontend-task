@@ -1,75 +1,90 @@
-html{
+html {
 	background-color: #E9EFFC;
 	box-sizing: border-box;
+	font-family: Tahoma;
+	font-style: normal;
+	font-weight: normal;
 }
-*,*::before, *::after{
+
+*,
+*::before,
+*::after {
 	box-sizing: inherit;
 }
-a, a:hover{
+
+a,
+a:hover {
 	text-decoration: none;
 }
-.wrapper{
+
+.wrapper {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.left_column{
+
+.left_column {
 	min-width: 474px;
 }
-.right_column{
+
+.right_column {
 	width: 816px;
 	height: 719px;
 	background-color: #F5F8FF;
 	border-radius: 6px;
 	margin: 30px 150px 30px 0px;
 }
+
 .logo {
 	background-image: url(../src/Ellipse%201.svg);
 	background-repeat: no-repeat;
 	margin-top: 224px;
 	margin-left: 172px;
-	margin: 
+	margin:
 }
-.description{
+
+.description {
 	max-width: 240px;
 	height: 105px;
 	margin-left: 117px;
 	text-align: center;
 	margin-top: 40px;
-	font-family: Tahoma;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
 	color: #818FB3;
 }
-h1{
+
+h1 {
 	margin-top: 25px;
-	font-family: Tahoma;
-	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 30px;
 	color: #455273;
 }
-h2{
+
+h2 {
 	margin-top: 25px;
-	font-family: Tahoma;
-	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 23px;
 	color: #455273;
 }
-.order{
+
+.order {
 	margin-left: 40px;
 	margin-top: 40px;
 }
-.mail, .adress{
+
+.mail,
+.adress {
 	float: right;
 	margin-right: 40px;
 }
-.order_name, .mail, .phone, .adress{
+
+.order_name,
+.mail,
+.phone,
+.adress {
 	background-color: #F5F8FF;
 	border-left-width: 0px;
 	border-right-width: 0px;
@@ -77,43 +92,73 @@ h2{
 	border-bottom-width: 1px;
 	border-bottom-color: #D5DDE0;
 	width: 328px;
-	font-family: Tahoma;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 12px;
 	line-height: 15px;
 	color: #455273;
 }
-.choose_water{
+
+.agree {
+	font-size: 12px;
+	line-height: 15px;
+	color: #455273;
+	margin-top: 30px;
+}
+
+.choose_water {
 	float: left;
 }
-.checkboxes{
+
+.checkboxes {
 	display: flex;
 }
-/*.choose_time{
-	float: right;
-}
-*/
-.grlight{
+
+.grlight {
 	height: 8px;
 	width: 8px;
 	float: right;
 	margin: 10px;
 	background: url(../src/Ellipse%204g.svg);
 }
-input[type="checkbox"] + span{
+
+input[type="checkbox"] + span {
 	display: block;
 	width: 96px;
 	height: 130px;
-    background: url(../src/Group%2014.svg) no-repeat;
+	background: url(../src/Group%2014.svg) no-repeat;
 	background-position: left -30px top -26px;
-    cursor: pointer;
+	cursor: pointer;
 	margin: 20px 20px 0px 0px;
 }
-input[type="checkbox"]:checked + span{
+
+input[type="checkbox"]:checked + span {
 	background: url(../src/Group%2015.svg) no-repeat;
 	background-position: left -30px top -26px;
 }
-input[type="checkbox"]:checked + span > .grlight{
+
+input[type="checkbox"]:checked + span > .grlight {
 	background: url(../src/Ellipse%204.svg)
+}
+
+.liters{
+	padding: 12px 0px 0px 12px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 23px;
+	color: #455273;
+}
+
+.sht{
+	padding: 2px 0px 0px 12px;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 13px;
+	color: #BABDC2;
+}
+
+.cost{
+	padding: 53px 0px 0px 12px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 15px;
+	color: #FFFFFF;
 }
