@@ -24,22 +24,37 @@
 		<form action="./lib/server.js">
 		<input type="text" placeholder="ФИО" name="order_name" class="order_name">
 		<input type="text" placeholder="E-mail" name="mail" class="mail"><br><br>
-		<input type="text" pattern="[0-9]{11}" placeholder="Номер телефона" name="phone" class="phone">
+		<input type="tel" pattern="[0-9]{11}" placeholder="Номер телефона" name="phone" class="phone">
 		<input type="text" placeholder="Адрес" name="adress" class="adress"><br>
 		<div class="agree">
-		<label><input type="checkbox"> Я согласен на </label><a href="#"> обработку персональных данных</a>
+		<label><input type="checkbox"> Я согласен(на) на </label><a href="#"> обработку персональных данных</a>
 		</div>
 		<div class="choose_water">
 			<h2>Вода</h2>
-			<div class="checkboxes">
-			<label><input style="display: none;" type="checkbox" checked><span><div class="grlight"></div><div class="liters">5 л</div><div class="sht">1 шт</div><div class="cost">220 ₽</div></span></label>
-			<label><input style="display: none;" type="checkbox"><span><div class="grlight"></div><div class="liters">5,5 л</div><div class="sht">2 шт</div><div class="cost">320 ₽</div></span></label>
-			<label><input style="display: none;" type="checkbox"><span><div class="grlight"></div><div class="liters">15 л</div><div class="sht">3 шт</div><div class="cost">440 ₽</div></span></label>
+			<div class="inflex">
+			<label><input style="display: none;" type="checkbox" checked><span class="first"><div class="grlight"></div><div class="liters">5 л</div><div class="sht">1 шт</div><div class="cost">220 ₽</div></span></label>
+			<label><input style="display: none;" type="checkbox"><span class="second"><div class="grlight"></div><div class="liters">5,5 л</div><div class="sht">2 шт</div><div class="cost">320 ₽</div></span></label>
+			<label><input style="display: none;" type="checkbox"><span class="second"><div class="grlight"></div><div class="liters">15 л</div><div class="sht">3 шт</div><div class="cost">440 ₽</div></span></label>
 			</div>
 		</div>
 		<div class="choose_time">
 			<h2>Дата и время доставки</h2>
-			День
+			<div class="day_time">ДЕНЬ</div>
+			<div class="inflex">
+				<div class="swipe">&lt;</div>
+				<label><input style="display: none;" type="checkbox"><span class="day"><div class="date">27</div><div class="wday">пн</div></span></label>
+				<label><input style="display: none;" type="checkbox"><span class="day"><div class="date">28</div><div class="wday">вт</div></span></label>
+				<label><input style="display: none;" type="checkbox"><span class="day"><div class="date">29</div><div class="wday">ср</div></span></label>
+				<label><input style="display: none;" type="checkbox"><span class="day"><div class="date">30</div><div class="wday">чт</div></span></label>
+				<label><input style="display: none;" type="checkbox"><span class="day"><div class="date">1</div><div class="wday">пт</div></span></label>
+				<label><input style="display: none;" type="checkbox"><span class="day"><div class="date">2</div><div class="wday">сб</div></span></label>
+				<label hidden><input style="display: none;" type="checkbox"><span class="day"><div class="date">3</div><div class="wday">вс</div></span></label>
+				<div class="swipe">&gt;</div>
+			</div>
+			<div class="day_time">ВРЕМЯ</div>
+			<div class="inflex">
+				<label><input style="display: none;" type="checkbox"><span class="time"><div class="ttime">0:00 - 11:00</div></span></label>
+			</div>
 		</div>
 		</form>
 		</div>

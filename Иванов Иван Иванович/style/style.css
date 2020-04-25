@@ -1,11 +1,107 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro Italic'), local('CeraPro-Italic'),
+        url('../fonts/CeraPro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro Regular'), local('CeraPro-Regular'),
+        url('../fonts/CeraPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro Black Italic'), local('CeraPro-BlackItalic'),
+        url('../fonts/CeraPro-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro Light'), local('CeraPro-Light'),
+        url('../fonts/CeraPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro Bold Italic'), local('CeraPro-BoldItalic'),
+        url('../fonts/CeraPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro Black'), local('CeraPro-Black'),
+        url('../fonts/CeraPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro Medium'), local('CeraPro-Medium'),
+        url('../fonts/CeraPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro Bold'), local('CeraPro-Bold'),
+        url('../fonts/CeraPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro Thin'), local('CeraPro-Thin'),
+        url('../fonts/CeraPro-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro Medium Italic'), local('CeraPro-MediumItalic'),
+        url('../fonts/CeraPro-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro Light Italic'), local('CeraPro-LightItalic'),
+        url('../fonts/CeraPro-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: local('Cera Pro Thin Italic'), local('CeraPro-ThinItalic'),
+        url('../fonts/CeraPro-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
 html {
 	background-color: #E9EFFC;
 	box-sizing: border-box;
-	font-family: Tahoma;
+	font-family: Cera Pro;
 	font-style: normal;
 	font-weight: normal;
 }
-
+url()
 *,
 *::before,
 *::after {
@@ -108,7 +204,7 @@ h2 {
 	float: left;
 }
 
-.checkboxes {
+.inflex {
 	display: flex;
 }
 
@@ -120,11 +216,25 @@ h2 {
 	background: url(../src/Ellipse%204g.svg);
 }
 
-input[type="checkbox"] + span {
+input[type="checkbox"] + .first {
 	display: block;
 	width: 96px;
 	height: 130px;
 	background: url(../src/Group%2014.svg) no-repeat;
+	background-position: left -30px top -26px;
+	cursor: pointer;
+	margin: 20px 20px 0px 0px;
+}
+
+input[type="checkbox"]:checked + .first {
+	background: url(../src/Group%2014.svg) no-repeat;
+	background-position: left -30px top -26px;
+}
+input[type="checkbox"] + .second {
+	display: block;
+	width: 96px;
+	height: 130px;
+	background: url(../src/Group%2015.svg) no-repeat;
 	background-position: left -30px top -26px;
 	cursor: pointer;
 	margin: 20px 20px 0px 0px;
@@ -160,5 +270,75 @@ input[type="checkbox"]:checked + span > .grlight {
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 15px;
+	color: #FFFFFF;
+}
+.day_time{
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 13px;
+	letter-spacing: 0.05em;
+	color: #BABDC2;
+	margin-top: 20px;
+}
+.date{
+	font-size: 12px;
+	font-weight: 500;
+	color: #455273;
+	margin-top: 2px;
+}
+.wday{
+	margin-bottom: 2px;
+	font-size: 9px;
+	font-weight: normal;
+	color: #9CAEDD;
+}
+.swipe{
+	margin-top: 10px;
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+	border: 1.5px solid #E5EDFF;
+	text-align: center;
+	color: #9CAEDD;
+	line-height: 25px
+}
+
+input[type="checkbox"] + .day {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 10px 4px 4px 4px;
+	background: #E5EDFF;
+	border-radius: 15px;
+	text-align:center;
+}
+input[type="checkbox"]:checked + .day {
+	background: #FFC369;
+}
+input[type="checkbox"]:checked + .day > .wday{
+	color: #FFFFFF;
+}
+input[type="checkbox"]:checked + .day > .date{
+	color: #FFFFFF;
+}
+input[type="checkbox"] + .time {
+	display: block;
+	width: 92px;
+	height: 30px;
+	margin: 10px 4px 4px 4px;
+	background: #E5EDFF;
+	border-radius: 15px;
+	text-align:center;
+}
+input[type="checkbox"]:checked + .time {
+	background: #FFC369;
+}
+.ttime{
+	padding-top: 6px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #455273;
+}
+input[type="checkbox"]:checked + .time > .ttime{
 	color: #FFFFFF;
 }
